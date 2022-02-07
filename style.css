@@ -1,0 +1,18 @@
+*{
+	font-family: Arial;
+}
+body{
+	align-content: center;
+	padding: 50px;
+}
+div{
+	width: auto;
+	height: auto;
+	padding: 50px;
+	text-align: center;
+	border: 1px solid;
+}
+td,th{
+padding: 8px;
+height: 30px;
+}
