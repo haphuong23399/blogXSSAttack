@@ -11,5 +11,6 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "ERROR: Không thể thực thi câu lệnh $sql. " . mysqli_error($link);
 }
+//header("Refresh:0");
 mysqli_close($link);
 ?>
