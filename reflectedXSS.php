@@ -1,9 +1,11 @@
+<?php include 'link-database.php';?>
 <html>
 <head>
 <title>DEMO REFLECTED XSS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<img src="img/logo.png" height="20%">
 	<form method="post">
 		<input type="submit" value="Logout" name="logout"> <input
 			type="submit" value="Back" name="back">
@@ -19,13 +21,6 @@
 if (isset($_GET['send'])) {
     $ten = $_GET['txt'];
     echo "<font color='red'>Hello " . $ten . "</font>";
-}
-if(isset($_POST["logout"])){
-    header("location: index.php");
-}
-
-if(isset($_POST["back"])){
-    header("location: nav.php");
 }
 ?>
 </div>

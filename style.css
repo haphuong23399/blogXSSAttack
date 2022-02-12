@@ -1,18 +1,22 @@
 *{
 	font-family: Arial;
+	background-color: #f8fff2;
+	font-color: #1c2120;
 }
 body{
 	align-content: center;
-	padding: 50px;
+	
 }
 div{
 	width: auto;
 	height: auto;
 	padding: 50px;
 	text-align: center;
-	border: 1px solid;
+	
+	padding: 50px;
 }
 td,th{
 padding: 8px;
 height: 30px;
+outline: 1px solid;
 }

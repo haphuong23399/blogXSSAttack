@@ -1,6 +1,5 @@
 <?php
 include 'link-database.php';
-session_start();
 ?>
 <html>
 <head>
@@ -8,6 +7,7 @@ session_start();
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<img src="img/logo.png" height="20%">
 	<form method="post">
 		<input type="submit" value="Logout" name="logout">
 		<input type="submit" value="Back" name="back">
@@ -27,14 +27,9 @@ session_start();
 		<br>
 	</div>
 	<div>
-		<p align="center">
-<?php
-if (isset($_POST['title']))
-    echo "Tiêu đề: " . $_POST['title'];
-?></p>
 		<table id="blog" align="center">
 			<thead>
-				<tr height="30" bgcolor="#ffb717" align="center">
+				<tr height="30" align="center">
 					<th width="80">Owner</th>
 					<th width="200">Date</th>
 					<th width="400">Content</th>
@@ -64,11 +59,5 @@ if (isset($_POST["send"])) {
     }
 }
 
-if(isset($_POST["logout"])){
-    header("location: index.php");
-}
 
-if(isset($_POST["back"])){
-    header("location: nav.php");
-}
 ?>
